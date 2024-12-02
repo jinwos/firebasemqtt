@@ -137,6 +137,8 @@ public class MainActivity extends AppCompatActivity {
         lista = findViewById(R.id.lista);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, TiposMarca);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spMarca.setAdapter(adapter);
 
     }
 
